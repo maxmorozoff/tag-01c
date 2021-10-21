@@ -17,7 +17,8 @@ const span = document.querySelector('span')
 const colorVars = ['--color-1','--color-2','--color-3','--ground','--sky'];
 
 const fetchColors = async () => {
-    var url = "http://colormind.io/api/";
+    // var url = "http://colormind.io/api/";
+    var url = "https://tag.morozov.page/api/";
     var data = {
         model: "default",
         // input: [[125, 74, 205],[239, 185, 37],[235, 99, 57],"N","N"]
@@ -34,8 +35,6 @@ const fetchColors = async () => {
     let css = getCssString(result)+
     `--grey-dark:${darkenBy(result[4],14)};`+
     `--grey-light:${darkenBy(result[4],5)};`
-    // `--grey-light: hsl(${Math.round(sky[0]*100)}, ${Math.round(sky[1]*100)}%, ${sky[1]*1.08}%);
-    // --grey-dark: rgba(0, 0, 0, 0.17);`;
 
     document.body.style = css
     span?.remove()
