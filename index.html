@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<head>
+    <title>Illustrazione: 01C</title>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta content="utf-8" http-equiv="encoding">
+    <meta lang="it-IT">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimal-ui" />
+    <link rel="icon" type="image/svg"  href="mp-icon.svg">
+    <meta name="theme-color" content="#ef2640" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400&display=swap" rel="stylesheet">
+    <link href="./index.css" rel="stylesheet">
+    <script async>
+        document.documentElement.className = 
+           document.documentElement.className.replace("no-js","js");
+    </script>
+</head>
+<body>
+    <main>
+        <div class="sky"></div>
+        <!-- <button class="main-btn" onclick="fetchColors()">Cambiare i colori</button> -->
+        <object id="svg-object" data="./illustration.svg" type="image/svg+xml" height="100%" width="100%" onload="svgLoaded()"></object>
+        <div class="illustration">
+            <!-- <div></div> -->
+        </div>
+        <span>Clicca per generare nuovi colori</span>
+    </main>
+    <script src="./index.js" async></script>
+</body>
+</html>
